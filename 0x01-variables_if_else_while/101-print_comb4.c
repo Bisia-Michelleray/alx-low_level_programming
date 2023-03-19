@@ -10,6 +10,7 @@ int main(void)
 {
 	int i;
 	int j;
+	int k;
 
 	for (i = 0 ; i < 10 ; i++)
 	{
@@ -17,14 +18,16 @@ int main(void)
 		{
 			for (k = 0 ; k < 10 ; k++)
 			{
-			if (i < j && i != j)
-			{
-				putchar(i + '0');
-				putchar(j + '0');
-				if (i + j != 17)
+				if (i < j && j < k)
 				{
-					putchar(',');
-					putchar(' ');
+					putchar(i + '0');
+					putchar(j + '0');
+					putchar(k + '0');
+					if (i + j + k != 24)
+					{
+						putchar(',');
+						putchar(' ');
+					}
 				}
 			}
 		}
