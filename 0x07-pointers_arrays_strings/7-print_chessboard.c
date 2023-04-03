@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _chessboard - prints the chessboard
+ * print_chessboard - prints the chessboard
  * @a: input
  * Return: always 0 (success)
  */
