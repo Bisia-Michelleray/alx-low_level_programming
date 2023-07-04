@@ -14,10 +14,9 @@ int pop_listint(listint_t **head)
 	int i;
 
 	if (head == NULL)
-	{
-		if(*head == NULL)
 		return (0);
-	}
+	if (*head == NULL)
+		return (0);
 	if (tmp_head == NULL)
 	{
 		i = 0;
